@@ -1,0 +1,35 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 1px black;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tile {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.tile p {
+    font-size: 10rem;
+}
