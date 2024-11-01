@@ -9,8 +9,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="header">
+        <p>Tic-Tac-Toe</p>
+    </div>
     <div id="container">
-        <div id="game-board">
+        <div id="form-container">
+            <form id="player-form">
+                <div class="player-entry-form">
+                    <label>Player 1 Name</label>
+                    <input type="text" name="player1" id="player1">
+                </div>
+                <div class="player-entry-form">
+                    <label>Player 2 Name</label>
+                    <input type="text" name="player2" id="player2">
+                </div>
+                <button id="start-game">Start Game</button>
+            </form>
+        </div>
+        <div id="game-board" class="hidden"></div>
+        <div id="end-game" class="hidden">
+            <p id="winning-message"></p>
+            <button id="play-again">Play Again</button>
         </div>
     </div>
 </body>
